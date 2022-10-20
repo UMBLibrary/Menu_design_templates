@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Menu Option1</title>
+    <title>Menucool McMenu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral" />
-    <link href="cssmenu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+    <link href="mcmenu.css" rel="stylesheet" />
+    <link href="mcmenu.css" rel="stylesheet" />
+    <script src="mcmenu.js"></script>
     <style>
         body {
             margin:0;
-            background:#FFFFFF;
+            background:transparent;
         }
         #menuDemo { text-align:center; padding:30px 8px; }
     </style>
 </head>
 <body>
 <div id="menuDemo">
-<!--start CssMenu-->
-<div id="cssmenu">
+<!--start McMenu-->
+<div class="menu-icon-wrapper">
+	<div class="menu-icon" data-menu="mcmenu">
+		<div class="three-line">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</div>
+<div id="mcmenu">
     <ul>
         <li>
             <span>About Our Library<i class="arrow"></i></span>
@@ -118,11 +129,12 @@
             </ul>
         </li>
 		<li><a href="#">Contact Us</a></li>
-		<li><a href="mcmenu.html">Menu Option 2</a></li>
-
     </ul>
 </div>
-<!--end CssMenu-->
+<!--end McMenu-->
+</div>
+<div>
+<h3 align="left"><a href="mcmenu_2.html">Menu-2</a></h3>
 </div>
 </body>
 </html>
