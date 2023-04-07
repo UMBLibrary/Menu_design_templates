@@ -13,11 +13,71 @@
             background:transparent;
         }
         #menuDemo { text-align:center; padding:30px 8px; }
+
+         /* New styles for the search box, card, and links */
+         .card {
+            background-color: #005a8c;
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .search-form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .links span {
+            color: #fff;
+            margin: 0 5px;
+        }
+        
+        .background-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: calc(10em + 20px); /* Height of search box (10 lines) + margin */
+            background-image: url('https://blogs.umb.edu/library/files/2015/02/cropped-HLfromcircdesk-1waunl4.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
-<h1>New Navigation Menu</h1>
-<div id="menuDemo">
+    <div class="background-image"></div>
+    <div id="menuDemo">
 <!--start McMenu-->
 <div class="menu-icon-wrapper">
 	<div class="menu-icon" data-menu="mcmenu">
@@ -141,5 +201,24 @@
 </div>
 <!--end McMenu-->
 </div>
+
+<!-- New code for the search box, card, and links -->
+<div class="card">
+    <h2>Search Umbrella</h2>
+    <form class="search-form">
+        <input type="text" class="search-box" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+    <div class="links">
+        <a href="#">Advanced search</a>
+        <span>|</span>
+        <a href="#">Databases</a>
+        <span>|</span>
+        <a href="#">Journals</a>
+        <span>|</span>
+        <a href="#">Course Reserves</a>
+    </div>
+</div>
+
 </body>
 </html>
