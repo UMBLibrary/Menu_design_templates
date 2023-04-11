@@ -60,23 +60,9 @@
             color: #fff;
             margin: 0 5px;
         }
-        
-        .background-image {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: calc(10em + 20px); /* Height of search box (10 lines) + margin */
-            background-image: url('https://blogs.umb.edu/library/files/2015/02/cropped-HLfromcircdesk-1waunl4.jpg');
-            background-size: cover;
-            background-position: center;
-            filter: blur(5px);
-            z-index: -1;
-        }
     </style>
 </head>
 <body>
-    <div class="background-image"></div>
     <div id="menuDemo">
 <!--start McMenu-->
 <div class="menu-icon-wrapper">
@@ -204,9 +190,11 @@
 
 <!-- New code for the search box, card, and links -->
 <div class="card">
-    <h2>Search Umbrella</h2>
+    <!-- move the below text to left corner -->
+    <h2 style="color: white;">Search Umbrella</h2>
     <form class="search-form">
         <input type="text" class="search-box" placeholder="Search...">
+        <!--  -->
         <button type="submit">Search</button>
     </form>
     <div class="links">
