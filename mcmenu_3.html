@@ -7,15 +7,67 @@
     <link href="mcmenu_3.css" rel="stylesheet" />
     <link href="mcmenu_3.css" rel="stylesheet" />
     <script src="mcmenu_3.js"></script>
+    <!-- Add the Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <style>
+
+        /* .section-with-bg {
+            background-image: url('bg.jpg');
+            height: 400px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        } */
+
+
+    .row_1 {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-bottom: 30px; /* Adjust the value to your preference */
+
+}
+
+.align-center {
+    justify-content: center;
+}
+
+        #search-card-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+    .proof-points {
+    background-color: #e6f1fc;
+}
+
+.section--banded {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+        .card-body {
+            color: white;
+        }
+
         body {
             margin:0;
             background:transparent;
         }
         #menuDemo { text-align:center; padding:30px 8px; }
 
-         /* New styles for the search box, card, and links */
-         .card {
+        /* New styles for the search box, card, and links */
+        .card {
             background-color: #005a8c;
             width: 100%;
             max-width: 600px;
@@ -24,6 +76,54 @@
             box-sizing: border-box;
             text-align: center;
             border-radius: 5px;
+        }
+
+        .column {
+    margin-bottom: 30px; /* Adjust the value to your preference */
+}
+
+.card_2 {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.column.medium-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+        .section-with-bg {
+            width: 100%;
+            height: 300px; /* Set the height of the background section */
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 50vh; /* Adjust the height as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #search-card {
+            background-color: rgba(0, 90, 140, 0.8); /* Add some opacity to the background */
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
         }
 
         .search-form {
@@ -60,153 +160,269 @@
             color: #fff;
             margin: 0 5px;
         }
+                .row_2 {
+            max-width: 75rem;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-flow: row wrap;
+            margin-top: 30px; /* Adjust the value to your preference */
+
+        }
+
+        .align-center {
+            justify-content: center;
+        }
+
     </style>
 </head>
 <body>
     <div id="menuDemo">
-<!--start McMenu-->
-<div class="menu-icon-wrapper">
-	<div class="menu-icon" data-menu="mcmenu">
-		<div class="three-line">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</div>
-</div>
-<div id="mcmenu">
-    <ul>
-        <li>
-            <span>About Our Library<i class="arrow"></i></span>
-            <ul class="dropdown">
-                <li><a href="#">Accessibility</a></li>
-                <li><a href="#">Events</a></li>
-                <li>
-                    <span>Giving to the Library<i class="arrow"></i></span>
-                    <ul class="dropdown">
-                        <li><a href="#">Monetary donations</a></li>
-                    </ul>
-                </li>
-				 <li><a href="#">Healey Library News</a></li>
-                <li>
-                    <span>Mission Statement and Strategic Plan<i class="arrow"></i></span>
-                    <ul class="dropdown">
-                        <li><a href="#">BLM statement</a></li>
-                        <li><a href="#">EDI statement</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Staff Directory</a></li>
-            </ul>
-        </li>
-		
-		<li>
-            <span>Building Hours & Spaces<i class="arrow"></i></span>
-            <ul class="dropdown">
-                <li><a href="#">Computers, Printing & Scanning</a></li>
-                <li><a href="#">Floor Directory</a></li>
-				<li><a href="#">Hours</a></li>
-                <li><a href="#">Study Space & Zoom Zone</a></li>
-                <li><a href="#">Visiting Policies</a></li>
-            </ul>
-        </li>
-		
-		<li>
-            <span>Find Library Materials<i class="arrow"></i></span>
-            <ul class="dropdown">
-                <li><a href="#">Databases List</a></li>
-				<li><a href="#">Journal Finder</a></li>
-                <li><a href="#">Lean Library Browser Extension</a></li>
-                <li><a href="#">ScholarWorks</a></li>
-                <li><a href="#">Search Tutorials</a></li>
-                <li><a href="#">UMBrella (Library Catalog)</a></li>
-                <li><a href="#">WorldCat (Search Other Libraries)</a></li>
-            </ul>
-        </li>
- 
-		<li class="full-width">
-            <span>Borrow, Request & Renew<i class="arrow"></i></span>
-            <div class="dropdown">
-                <div class="clm">
-                    <h3>Using Library Materials</h3>
-					<hr>
-                    <a href="#">Borrow, Renew & Return</a>
-                    <a href="#">Course Reserves</a>
-                    <a href="#">Curbside Pickup</a>
-					<a>My Library Account</a>
-					<a>↳Single Sign-on (SSO)</a>
-                    <a>Suggest a Book/Film/Journal for the Collection</a>
-					<a href="#">Using Other Libraries</a>
-                </div>
-                <div class="clm">
-                    <h3>InterLibrary Loan (ILL)</h3>
-					<hr>
-                    <a href="#">InterLibrary Loan (ILL)</a>
-                    <a href="#">Get Started with ILL</a>
-                    <a href="#">ILL & Copyright</a>
-                    <a href="#">ILL Lending</a>
-                    <a href="#">ILL Policies</a>
+        <!--start McMenu-->
+        <div class="menu-icon-wrapper">
+            <div class="menu-icon" data-menu="mcmenu">
+                <div class="three-line">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
-        </li>       
-		
-		<li class="full-width">
-            <span>Instruction & Research Services<i class="arrow"></i></span>
-            <div class="dropdown">
-                <div class="clm">
-                    <h3>Research Services</h3>
-					<hr>
-                    <a href="#">Off-Campus Access</a>
-                    <a href="#">Research Guides</a>
-                    <a href="#">Virtual Reference & Research consultation</a>
-                </div>
-                <div class="clm">
-                    <h3>Instruction Support</h3>
-					<hr>
-					<a href="#">Faculty Services</a>
-                    <a href="#">Course Reserves</a>
-                    <a href="#">Library Instruction Services</a>
-                    <a href="#">Suggest a Book/Film/Journal for the Collection</a>
-                    <a href="#">Virtual Reference Services</a>
-                </div>
-            </div>
-        </li>
-		
-			<li>
-            <span>Archives & Special Collections<i class="arrow"></i></span>
-            <ul class="dropdown">
-                <li><a href="#">Archives and Special Collections</a></li>
-                <li><a href="#">Digital Collections</a></li>
-                <li><a href="#">Finding Aids</a></li>
-                <li><a href="#">Mass. Memories Road Show</a></li>
-                <li><a href="#">Open Archives News</a></li>
-				<li><a href="#">Roadmap for Participatory Archiving (RoPA )</a></li>
+        </div>
+        <div id="mcmenu">
+            <ul>
+                <li>
+                    <span>About Our Library<i class="arrow"></i></span>
+                    <ul class="dropdown">
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li>
+                            <span>Giving to the Library<i class="arrow"></i></span>
+                            <ul class="dropdown">
+                                <li><a href="#">Monetary donations</a></li>
+                            </ul>
+                        </li>
+                         <li><a href="#">Healey Library News</a></li>
+                        <li>
+                            <span>Mission Statement and Strategic Plan<i class="arrow"></i></span>
+                            <ul class="dropdown">
+                                <li><a href="#">BLM statement</a></li>
+                                <li><a href="#">EDI statement</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Staff Directory</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <span>Building Hours & Spaces<i class="arrow"></i></span>
+                    <ul class="dropdown">
+                        <li><a href="#">Computers, Printing & Scanning</a></li>
+                        <li><a href="#">Floor Directory</a></li>
+                        <li><a href="#">Hours</a></li>
+                        <li><a href="#">Study Space & Zoom Zone</a></li>
+                        <li><a href="#">Visiting Policies</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <span>Find Library Materials<i class="arrow"></i></span>
+                    <ul class="dropdown">
+                        <li><a href="#">Databases List</a></li>
+                        <li><a href="#">Journal Finder</a></li>
+                        <li><a href="#">Lean Library Browser Extension</a></li>
+                        <li><a href="#">ScholarWorks</a></li>
+                        <li><a href="#">Search Tutorials</a></li>
+                        <li><a href="#">UMBrella (Library Catalog)</a></li>
+                        <li><a href="#">WorldCat (Search Other Libraries)</a></li>
+                    </ul>
+                </li>
+         
+                <li class="full-width">
+                    <span>Borrow, Request & Renew<i class="arrow"></i></span>
+                    <div class="dropdown">
+                        <div class="clm">
+                            <h3>Using Library Materials</h3>
+                            <hr>
+                            <a href="#">Borrow, Renew & Return</a>
+                            <a href="#">Course Reserves</a>
+                            <a href="#">Curbside Pickup</a>
+                            <a>My Library Account</a>
+                            <a>↳Single Sign-on (SSO)</a>
+                            <a>Suggest a Book/Film/Journal for the Collection</a>
+                            <a href="#">Using Other Libraries</a>
+                        </div>
+                        <div class="clm">
+                            <h3>InterLibrary Loan (ILL)</h3>
+                            <hr>
+                            <a href="#">InterLibrary Loan (ILL)</a>
+                            <a href="#">Get Started with ILL</a>
+                            <a href="#">ILL & Copyright</a>
+                            <a href="#">ILL Lending</a>
+                            <a href="#">ILL Policies</a>
+                        </div>
+                    </div>
+                </li>       
+                
+                <li class="full-width">
+                    <span>Instruction & Research Services<i class="arrow"></i></span>
+                    <div class="dropdown">
+                        <div class="clm">
+                            <h3>Research Services</h3>
+                            <hr>
+                            <a href="#">Off-Campus Access</a>
+                            <a href="#">Research Guides</a>
+                            <a href="#">Virtual Reference & Research consultation</a>
+                        </div>
+                        <div class="clm">
+                            <h3>Instruction Support</h3>
+                            <hr>
+                            <a href="#">Faculty Services</a>
+                            <a href="#">Course Reserves</a>
+                            <a href="#">Library Instruction Services</a>
+                            <a href="#">Suggest a Book/Film/Journal for the Collection</a>
+                            <a href="#">Virtual Reference Services</a>
+                        </div>
+                    </div>
+                </li>
+                
+                    <li>
+                    <span>Archives & Special Collections<i class="arrow"></i></span>
+                    <ul class="dropdown">
+                        <li><a href="#">Archives and Special Collections</a></li>
+                        <li><a href="#">Digital Collections</a></li>
+                        <li><a href="#">Finding Aids</a></li>
+                        <li><a href="#">Mass. Memories Road Show</a></li>
+                        <li><a href="#">Open Archives News</a></li>
+                        <li><a href="#">Roadmap for Participatory Archiving (RoPA )</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
-        </li>
-		<li><a href="#">Contact Us</a></li>
-    </ul>
-</div>
-<!--end McMenu-->
-</div>
-
-<!-- New code for the search box, card, and links -->
-<div class="card">
-    <!-- move the below text to left corner -->
-    <h2 style="color: white;">Search Umbrella</h2>
-    <form class="search-form">
-        <input type="text" class="search-box" placeholder="Search...">
-        <!--  -->
-        <button type="submit">Search</button>
-    </form>
-    <div class="links">
-        <a href="#">Advanced search</a>
-        <span>|</span>
-        <a href="#">Databases</a>
-        <span>|</span>
-        <a href="#">Journals</a>
-        <span>|</span>
-        <a href="#">Course Reserves</a>
+        </div>
+        <!--end McMenu-->
+        </div>
+        
+    <div class="container" id="search-card-container">
+        <div class="section-with-bg"></div>
+        <!-- New code for the search box, card, and links -->
+        <div class="card" id="search-card">
+            <!-- move the below text to left corner -->
+            <h2 style="color: white;">Search Umbrella</h2>
+            <form class="search-form">
+                <input type="text" class="search-box" placeholder="Search...">
+                <!--  -->
+                <button type="submit">Search</button>
+            </form>
+            <div class="links">
+                <a href="#">Advanced search</a>
+                <span>|</span>
+                <a href="#">Databases</a>
+                <span>|</span>
+                <a href="#">Journals</a>
+                <span>|</span>
+                <a href="#">Course Reserves</a>
+            </div>
+        </div>
     </div>
-</div>
+    <!-- New row with three columns -->
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Quick Links</h3>
+                        <div class="icon-link-group__links row">
+                            <div class="icon-link-group__link columns small-12"><a href=""><i class="fal fa-users-class"></i><span>Book a Study Room</span></a></div>
+                            <div class="icon-link-group__link columns small-12"><a href="" target="_blank"><i class="fal fa-books"></i><span>Access Course Reserves</span></a></div>
+                            <div class="icon-link-group__link columns small-12"><a href="" target="_blank"><i class="fal fa-book"></i><span>Request an Interlibrary Loan</span></a></div>
+                            <div class="icon-link-group__link columns small-12"><a href="" target="_blank"><i class="fal fa-comments"></i><span>Meet with a Librarian</span></a></div>
+                            <div class="icon-link-group__link columns small-12"><a href="" target="_blank"><i class="fas fa-comment"></i><span>Suggest a Purchase</span></a></div>
+                            <div class="icon-link-group__link columns small-12"><a href="" target="_blank"><i class="fal fa-sign-in-alt"></i><span>Log in to My Account</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Library Hours</h3>
+                        <p>Monday - Thursday: 8:00am - 10:00pm</p>
+                        <p>Friday: 8:00am - 5:00pm</p>
+                        <p>Saturday: 10:00am - 5:00pm</p>
+                        <p>Sunday: 1:00pm - 10:00pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Library News</h3>
+                        <p>Library News will go here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- provide section with colums dividers  -->
+
+    <section class="proof-points section--banded">
+        <div class="row_1 align-center">
+            <div class="column small-12">
+                <!-- needed a centered side line for the More to Explore -->
+                <h2 class="h4"><span>            More to Explore
+        </span></h2>
+            </div>
+        </div>
+        <div class="row_2 align-center">
+            <div class="column small-12 medium-4">
+                <div class="card_2">
+                <div class="proof-point">
+                    <div class="proof-point__icon">
+                        <i class="fal fa-book"></i>
+                    </div>
+                    <div class="proof-point__content">
+                        <h3 class="h5">Research Guides</h3>
+                        <p>Find research guides for your subject area.</p>
+                        <a href="#">View Research Guides</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="column small-12 medium-4">
+                <div class="card_2">
+                <div class="proof-point">
+                    <div class="proof-point__icon">
+                        <i class="fal fa-book"></i>
+                    </div>
+                    <div class="proof-point__content">
+                        <h3 class="h5">Research Guides</h3>
+                        <p>Find research guides for your subject area.</p>
+                        <a href="#">View Research Guides</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="column small-12 medium-4">
+                <div class="card_2">
+                <div class="proof-point">
+                    <div class="proof-point__icon">
+                        <i class="fal fa-book"></i>
+                    </div>
+                    <div class="proof-point__content">
+                        <h3 class="h5">Research Guides</h3>
+                        <p>Find research guides for your subject area.</p>
+                        <a href="#">View Research Guides</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 </body>
 </html>
+
