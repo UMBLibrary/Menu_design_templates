@@ -101,7 +101,7 @@
         .section-with-bg {
             width: 100%;
             height: 300px; /* Set the height of the background section */
-            background-image: url('https://cdn.wallpapersafari.com/77/82/C4nLhI.jpg');
+            background-image: url('bg.jpg');
             background-size: cover;
             background-position: center;
             width: 100%;
@@ -176,6 +176,51 @@
             justify-content: center;
         }
 
+
+
+    .card_contact {
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+  .card-title_contact {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .card-description_contact {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .contact-details_contact {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  .contact-detail_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-icon_contact {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  #contact_card_sec {
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .text_decor a {
+    text-decoration: none;
+    color: white;
+  }
+  
     </style>
 </head>
 <body>
@@ -334,13 +379,13 @@
                 <div class="card">
                     <div class="card-body">
                         <h3 class="card-title">Quick Links</h3>
-                        <div class="icon-link-group__links row">
-                            <div class="icon-link-group__link columns small-12"><a href=""><i class="fal fa-users-class"></i><span>Book a Study Room</span></a></div>
-                            <div class="icon-link-group__link columns small-12"><a href="" target="_blank"><i class="fal fa-books"></i><span>Access Course Reserves</span></a></div>
-                            <div class="icon-link-group__link columns small-12"><a href="" target="_blank"><i class="fal fa-book"></i><span>Request an Interlibrary Loan</span></a></div>
-                            <div class="icon-link-group__link columns small-12"><a href="" target="_blank"><i class="fal fa-comments"></i><span>Meet with a Librarian</span></a></div>
-                            <div class="icon-link-group__link columns small-12"><a href="" target="_blank"><i class="fas fa-comment"></i><span>Suggest a Purchase</span></a></div>
-                            <div class="icon-link-group__link columns small-12"><a href="" target="_blank"><i class="fal fa-sign-in-alt"></i><span>Log in to My Account</span></a></div>
+                        <div class="row text_decor">
+                            <div class="columns small-12"><a href=""><i class="fal fa-users-class"></i><span>Book a Study Room</span></a></div>
+                            <div class="columns small-12"><a href="" target="_blank"><i class="fal fa-books"></i><span>Access Course Reserves</span></a></div>
+                            <div class="columns small-12"><a href="" target="_blank"><i class="fal fa-book"></i><span>Request an Interlibrary Loan</span></a></div>
+                            <div class="columns small-12"><a href="" target="_blank"><i class="fal fa-comments"></i><span>Meet with a Librarian</span></a></div>
+                            <div class="columns small-12"><a href="" target="_blank"><i class="fas fa-comment"></i><span>Suggest a Purchase</span></a></div>
+                            <div class="columns small-12"><a href="" target="_blank"><i class="fal fa-sign-in-alt"></i><span>Log in to My Account</span></a></div>
                         </div>
                     </div>
                 </div>
@@ -421,7 +466,27 @@
             </div>
         </div>
     </section>
-
+<!-- Provide html and css for single card in the center below the above section  -->
+<div class="row_1 align-center">
+    <div class="card_contact">
+    <div class="card-title_contact">Contact Us</div>
+    <div class="card-description_contact">Feel free to reach out to us via any of the methods below:</div>
+    <div class="contact-details_contact">
+      <div class="contact-detail_contact">
+        <div class="contact-icon_contact">📞</div>
+        <div>+1 (234) 567-8910</div>
+      </div>
+      <div class="contact-detail_contact">
+        <div class="contact-icon_contact">📧</div>
+        <div>info@example.com</div>
+      </div>
+      <div class="contact-detail_contact">
+        <div class="contact-icon_contact">📍</div>
+        <div>123 Main St, City, State</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
